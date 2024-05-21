@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Structure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Our Pricing</h1><div class="currency-select">
+            <label for="currency" class="curlabel">Currency:</label>
+            <select  id="currency">
+                <option value="$">$ USD</option>
+                <option value="€">€ EURO</option>
+                <option value="£">£ GBP</option>
+            </select></div>
+            <div class="toggle-bar">
+                <span>Annual</span>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle-label">
+                    <span class="toggle_circle"> </span>
+                </label><span class="span_month">Monthly</span>
+            </div>
+        
+            <div class="plans">
+                <div class="plan" id="basic">
+                <h2>Basic Plans</h2>
+                <p class="price">$10/Month</p>
+                <ul>
+                    <li>Task Management</li>
+                <li>Basic Supporting</li>
+                <li>Email Support</li>
+            </ul>
+            .
+            </div>
+            <div class="plan" id="pro">
+                <h2>Pro Plan</h2>
+                <p class="price">$25/Month</p>
+                <ul>
+                    <li>Everything In Basic</li>
+                    <li>Advance Reporting</li>
+                    <li>Priority Email Support</li>
+                    <li>10 Gb Storage Per User</li>
+                    
+                </ul>
+            </div>
+            <div class="plan" id="Enterprise">
+                <h2>Enterprise Plan</h2>
+                <p class="price">Custom Pricing</p>
+                <ul>
+                    <li>Everything In Pro</li>
+                    <li>24/7 Support</li>
+                    <li>Dedicated Amount Manager</li>
+                    <li>Unlimited Storage</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="user-slider">
+            <label for="num-users">Number of Users:</label>
+            <input type="range" id="num-users" min="1" max="100" value="1"> 
+            <span id="user-count">1</span>
+        </div>
+        <div class="total-price">
+            <h3>Total Price:  <span id="total">$10</span></h3>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
